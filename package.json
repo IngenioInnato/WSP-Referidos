@@ -1,0 +1,12 @@
+{
+  "name": "referidos",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "git add -A && git commit -m \"actualizando cambios\" && git push"
+  }, 
+  "keywords": [],
+  "author": "Ingenio Innato",
+  "license": "ISC"
+}
