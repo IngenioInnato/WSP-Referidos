@@ -38,7 +38,8 @@
 <body>
   <section id="S1" class="mt-5  text-center justify-content-center align-items-center d-flex flex-column px-3 px-lg-5 pb-lg-3">
     <h1 class="pb-0">CORONAVIRUS UPDATE</h1>
-    <h2> Comercios, escuelas y negocios cerrados. Este es un gran momento para generar ingresos por referidos. Gana desde tu casa hasta $350 por cada referido. No hay límites en esta oportunidad.</h2>
+    <h2> Comercios, escuelas y negocios cerrados. Este es un gran momento para generar ingresos por referidos. Gana desde tu
+      casa hasta $350 a $500 por cada referido. No hay límites en esta oportunidad.</h2>
     <picture class="mb-3">
       <source srcset="./resources/img/referidos/pruebas.webp" alt="pruebas" class="img-fluid w-75" type="image/webp">
       <img src="./resources/img/referidos/pruebas.jpg" alt="pruebas" class="img-fluid w-75">
@@ -47,8 +48,48 @@
     <a href="https://calendly.com/worldsolarprous/personalmanagertraining" class="btn-wsp w-50 text-center justify-content-center mb-3">¡ Mientras más refieras  más ganas !</a>
     <h2 class="pb-0 mb-0">¿Necesitas más pruebas?<br><a href="./proof.html">¡ HAZ CLIC AQUÍ !</a></h2>
   </section>
+  <section id="S7" class="carousel--testimonios mb-5 px-lg-5 px-0">
+    <h2 class="text-center">Testimonios</h2>
+    <div class="carousel__slide">
+      <div class="carousel__control control__prev" data-slide-number="0"><i class="chvron-left"></i></div>
+      <div class="carousel__item flex-column px-md-5 px-3 align-self-center text-center">
+        <img src="./resources/img/testimonios/angelica.jpg" alt="Angélica Castillo" class="rounded-circle img-fluid mb-2">
+        <p class="pb-0">Angélica Castillo</p>
+        <p class="pb-0 mb-0">Estoy muy satisfecha gracias a que mi vecina me refirió a la empresa de energía solar.<br>Ahora puedo disfrutar de mi sistema de placas y a la vez reducir mi factura de luz.</p>
+      </div>
+      <div class="carousel__item flex-column px-md-5 px-3 align-self-center text-center">
+        <img src="./resources/img/testimonios/cecilia.jpg" alt="Cecilia Osorio" class="rounded-circle img-fluid mb-2">
+        <p class="pb-0">Cecilia Osorio</p>
+        <p class="pb-0 mb-0">Desde que entre al programa hace dos semanas, he ganado $1000.Me alegra también haber ayudado a mi vecino a reducir su bill de luz.</p>
+      </div>
+      <div class="carousel__item flex-column px-md-5 px-3 align-self-center text-center">
+        <img src="./resources/img/testimonios/sofia.jpg" alt="Sofia Torres" class="rounded-circle img-fluid mb-2">
+        <p class="pb-0">Sofia Torres</p>
+        <p class="pb-0 mb-0">Cuando decretaron la cuarentena perdi mi empleo. Gracias al programa de referidos he podido trabajar desde casa y cubrir los gastos de ni hogar.</p>
+      </div>
+      <div class="carousel__item flex-column px-md-5 px-3 align-self-center text-center">
+        <img src="./resources/img/testimonios/sofia.jpg" alt="Sofia Torres" class="rounded-circle img-fluid mb-2">
+        <p class="pb-0">Sofia Torres</p>
+        <p class="pb-0 mb-0">Trabajar desde casa me ha dado la oportunidad de poder pasar más tiempo con mi familia y beneficiar a mis conocidos y amigos  para que reduzcan sus altas facturas de luz.</p>
+      </div>
+      <div class="carousel__control control__next" data-slide-number="2"><i class="chvron-rigth"></i></div>
+    </div>
+    <div class="carousel__indicator">
+    </div>
+  </section>
   <footer class="text-center">
     <p>Copyright 2020 World Solar Pro</p>
   </footer>
+  <script src="./vendors/carousel/carousel.js"></script>
+  <script>
+    var carouselHTML = document.querySelector('.carousel--testimonios');
+    var boolControl = true;
+    var boolIndicator = false;
+    var numSlideItem = [1, 1, 1, 1, 1];
+    var breakPoint = [0, 576, 768, 992, 1200];
+    var boolNumIndicator = false;
+    var carousel = new Carousel(carouselHTML, boolControl, boolIndicator, numSlideItem, breakPoint, boolNumIndicator);
+
+  </script>
 </body>
 </html>
