@@ -50,8 +50,55 @@
       </div>
     </div>
   </section>
+  <section id="S4" class="formulario my-5 p-lg-3 p-0 bg-blue">
+    <h1 class="font-weight-bold text-light pt-lg-5 pt-3 pb-3 mb-0 px-lg-3 px-3 text-center">Suscríbete Ahora</h1>
+    <form class="S4__form to-top pb-lg-0 pb-3">
+      <span class="input input--wsp">
+        <input class="input__field input__field--wsp" type="text" id="q-1" maxlength="80" required />
+        <label class="input__label input__label--wsp" for="q-1">
+          <span class="input__label-content input__label-content--wsp">Nombre</span>
+        </label>
+      </span>
+      <span class="input input--wsp">
+        <input class="input__field input__field--wsp" type="email" id="q-2" maxlength="80" required/>
+        <label class="input__label input__label--wsp" for="q-2">
+          <span class="input__label-content input__label-content--wsp">Email</span>
+        </label>
+      </span>
+      <span class="input input--wsp">
+        <input class="input__field input__field--wsp" type="tel" id="q-3" required/>
+        <label class="input__label input__label--wsp" for="q-3">
+          <span class="input__label-content input__label-content--wsp">Teléfono</span>
+        </label>
+      </span>
+      <span class="input input--wsp mb-2">
+        <input class="input__field input__field--wsp" type="text" id="q-4" maxlength="100" required/>
+        <label class="input__label input__label--wsp" for="q-4">
+          <span class="input__label-content input__label-content--wsp" >Dirección</span>
+        </label>
+      </span>
+      <span class="input input--wsp mb-2">
+        <input class="input__field input__field--wsp" type="text" id="q-5" maxlength="80" required/>
+        <label class="input__label input__label--wsp" for="q-5">
+          <span class="input__label-content input__label-content--wsp">Ciudad</span>
+        </label>
+      </span>
+      <input type="submit" class="btn-wsp w-100 text-center d-block text-uppercase" name="text" id="send-q">
+    </form>
+  </section>
   <footer class="text-center">
     <p>Copyright 2020 World Solar Pro US LLC</p>
   </footer>
+  <script src="./vendors/carousel/carousel.js"></script>
+  <script>
+    var carouselHTML = document.querySelector('.carousel--testimonios');
+    var boolControl = true;
+    var boolIndicator = false;
+    var numSlideItem = [1, 1, 1, 1, 1];
+    var breakPoint = [0, 576, 768, 992, 1200];
+    var boolNumIndicator = false;
+    var carousel = new Carousel(carouselHTML, boolControl, boolIndicator, numSlideItem, breakPoint, boolNumIndicator);
+
+  </script>
 </body>
 </html>
