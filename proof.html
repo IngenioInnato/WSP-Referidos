@@ -42,7 +42,7 @@
   <section id="S2" class="container">
     <div class="row justify-content-center align-items-center pb-5 text-center">
       <div class="col-lg-6 embed-responsive embed-responsive-16by9 mb-lg-0 mb-3">
-        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/VOkRmlDLWoI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <iframe id="video" class="embed-responsive-item" src="" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
       </div>
       <div class="col-lg-6 px-3 ">
         <h2 class="mb-0 pb-0">Observa el video para aprender cómo ganar un gran capital desde tu hogar.</h2>
@@ -91,13 +91,23 @@
   </footer>
   <script src="./vendors/carousel/carousel.js"></script>
   <script>
-    var carouselHTML = document.querySelector('.carousel--testimonios');
-    var boolControl = true;
-    var boolIndicator = false;
-    var numSlideItem = [1, 1, 1, 1, 1];
-    var breakPoint = [0, 576, 768, 992, 1200];
-    var boolNumIndicator = false;
-    var carousel = new Carousel(carouselHTML, boolControl, boolIndicator, numSlideItem, breakPoint, boolNumIndicator);
+
+    function getRandomArbitrary(min, max) {
+      return Math.floor(Math.random() * (max - min + 1)) + min;
+    }
+    var nRandom = getRandomArbitrary(1, 2);
+    var video = document.getElementById('video');
+    var ytVideo = [
+      'https://www.youtube.com/embed/VOkRmlDLWoI', // Marleny
+      'https://www.youtube.com/embed/KuGz0o7RsDs'  // Carlos
+    ];
+    function setVideo(){
+      video.setAttribute('src', ytVideo[nRandom - 1])  
+    }
+    switch (nRandom) {
+      case 1: setVideo();
+      case 2: setVideo();
+    }
 
   </script>
 </body>
