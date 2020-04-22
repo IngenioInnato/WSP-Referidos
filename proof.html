@@ -99,17 +99,18 @@
     var video = document.getElementById('video');
     var ytVideo = [
       'https://www.youtube.com/embed/VOkRmlDLWoI', // Marleny
-      'https://www.youtube.com/embed/KuGz0o7RsDs',  // Carlos
-      'https://youtu.be/3FP_SeKg8MY'
+      'https://www.youtube.com/embed/KuGz0o7RsDs', // Carlos
+      'https://www.youtube.com/embed/3FP_SeKg8MY'  // Angely 
     ];
     function setVideo(){
       video.setAttribute('src', ytVideo[nRandom - 1])  
     }
-    switch (nRandom) {
-      case 1: setVideo();
-      case 2: setVideo();
-      case 3: setVideo();
-    }
+    setVideo();
+    // switch (nRandom) {
+    //   case 1: setVideo();
+    //   case 2: setVideo();
+    //   case 3: setVideo();
+    // }
 
   </script>
 </body>
