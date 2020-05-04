@@ -108,15 +108,7 @@
     }
     setVideo();
 // 587
-    Email.send({
-    SecureToken :"7dc42f3c-d524-4397-9d98-c1857fa90196",
-    To : 'ganaporreferidos@worldsolarprous.com',
-    From : "ganaporreferidos@worldsolarprous.com",
-    Subject : "Hola Mundo",
-    Body : "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aspernatur iusto asperiores voluptates atque nulla quo sapiente dolores quidem. Perferendis animi nesciunt minus accusantium aut quia distinctio reprehenderit itaque sequi ullam."
-    }).then(
-      message => alert(message)
-    );
+
 
     var form = document.querySelector('.S4__form');
 
@@ -141,7 +133,16 @@ form.addEventListener('submit', e => {
   e.preventDefault();
   var data = stringMail();
   console.log(data);
-    form.innerHTML = '<h2 class="text-light text-center p-3 bg-orange">GRACIAS POR ENVIAR SU MENSAJE<h2>';
+  form.innerHTML = '<h2 class="text-light text-center p-3 bg-orange">GRACIAS POR ENVIAR SU MENSAJE<h2>';
+  Email.send({
+  SecureToken :"7dc42f3c-d524-4397-9d98-c1857fa90196",
+  To : 'ganaporreferidos@worldsolarprous.com',
+  From : "ganaporreferidos@worldsolarprous.com",
+  Subject : "Gane por referidos lead",
+  Body : data
+  }).then(
+    message => alert(message)
+  );
 });
   </script>
 </body>
